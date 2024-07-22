@@ -27,6 +27,10 @@
     background-color: $secondary;
   }
 
+  &__button:focus-within {
+    outline: auto 7px $secondary;
+  }
+
   &__prev svg {
     transform: rotateY(180deg);
   }

@@ -26,14 +26,17 @@ function AudioPlayerActions({ audioRef, isPlaying, setIsPlaying, handleNextAudio
   return (
     <div className="audio-player__actions">
       <button className="audio-player__next audio-player__button"
+        aria-label="Next audio"
         onClick={handleNextAudio}>
         <NextIcon />
       </button>
       <button className="audio-player__play audio-player__button"
+        aria-label="Play or pause"
         onClick={handlePlayButtonClick}>
-        {isPlaying ? <PauseIcon/> : <PlayIcon />}
+        {isPlaying ? <PauseIcon /> : <PlayIcon />}
       </button>
       <button className="audio-player__prev audio-player__button"
+        aria-label="Previous audio"
         onClick={handlePrevAudio}>
         <NextIcon />
       </button>

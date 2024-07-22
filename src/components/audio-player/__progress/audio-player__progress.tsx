@@ -19,8 +19,8 @@ function AudioPlayerProgress({ audioRef, timeProgress, duration, setTimeProgress
 
   return (
     <input className="audio-player__progress" type="range"
+      aria-label="audio progress range"
       onChange={handleProgressChange}
-      defaultValue="0"
       max={duration}
       value={timeProgress} />
   );

@@ -35,6 +35,7 @@ function AudioPlayerVolume({ audioRef, volume, setVolume }: AudioPlayerVolumePro
   return (
     <div className="audio-player__volume-container">
       <button className="audio-player__volume-off"
+        aria-label="Volume off"
         onClick={handleVolumeOff}>
         {volume === 0
           ? <VolumeOffIcon className="audio-player__volume-icon"></VolumeOffIcon>
@@ -42,6 +43,7 @@ function AudioPlayerVolume({ audioRef, volume, setVolume }: AudioPlayerVolumePro
         }
       </button>
       <input className="audio-player__volume-range"
+        aria-label="audio volume range"
         type="range"
         max={100}
         value={volume}
