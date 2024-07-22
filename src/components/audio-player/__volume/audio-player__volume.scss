@@ -1,0 +1,43 @@
+@import "../../../variables.scss";
+
+.audio-player {
+  &__volume-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__volume-off {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  &__volume-range {
+    margin: 0 0.5rem;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 200px;
+
+    &::-webkit-slider-runnable-track {
+      height: 2px;
+      background-color: $gray;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 50%;
+      height: 12px;
+      width: 12px;
+      margin-top: calc((2px / 2) - (12px / 2));
+      background-color: $secondary;
+    }
+  }
+
+  &__volume-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

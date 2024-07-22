@@ -1,0 +1,24 @@
+@import "../../../variables.scss";
+
+.audio-player {
+  &__progress {
+    -webkit-appearance: none;
+    appearance: none;    
+    width: 235px;
+    height: 4px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: $gray;
+    accent-color: $secondary;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 4px;
+      width: 1px;
+      box-shadow: -260px 0 0 260px $secondary;
+      background-color: $secondary;
+    }
+  }
+}

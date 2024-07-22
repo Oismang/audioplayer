@@ -1,0 +1,43 @@
+@import "../../variables.scss";
+
+.audio-player {
+  display: flex;
+  position: relative;
+  background-color: $background;
+  box-shadow: 0.2rem 0.2rem $shadow;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  background-image: url("../../assets/images/backround-player.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &__settings {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 8rem;
+
+    & > * {
+      margin: 1rem 0;
+    }
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__name, &__author {
+    margin: 0;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__author {
+    font-style: italic;
+  }
+}
